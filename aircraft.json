@@ -1,0 +1,211 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Generated schema a aircraft object",
+    "type": "object",
+    "properties": {
+        "hex": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        },
+        "flight": {
+            "type": "string"
+        },
+        "r": {
+            "type": "string"
+        },
+        "t": {
+            "type": "string"
+        },
+        "desc": {
+            "type": "string"
+        },
+        "alt_baro": {
+            "type": "number"
+        },
+        "gs": {
+            "type": "number"
+        },
+        "ias": {
+            "type": "number"
+        },
+        "tas": {
+            "type": "number"
+        },
+        "mach": {
+            "type": "number"
+        },
+        "oat": {
+            "type": "number"
+        },
+        "tat": {
+            "type": "number"
+        },
+        "track": {
+            "type": "number"
+        },
+        "track_rate": {
+            "type": "number"
+        },
+        "roll": {
+            "type": "number"
+        },
+        "mag_heading": {
+            "type": "number"
+        },
+        "true_heading": {
+            "type": "number"
+        },
+        "baro_rate": {
+            "type": "number"
+        },
+        "geom_rate": {
+            "type": "number"
+        },
+        "squawk": {
+            "type": "string"
+        },
+        "emergency": {
+            "type": "string"
+        },
+        "category": {
+            "type": "string"
+        },
+        "nav_qnh": {
+            "type": "number"
+        },
+        "nav_altitude_mcp": {
+            "type": "number"
+        },
+        "rr_lat": {
+            "type": "number"
+        },
+        "rr_lon": {
+            "type": "number"
+        },
+        "lastPosition": {
+            "type": "object",
+            "properties": {
+                "lat": {
+                    "type": "number"
+                },
+                "lon": {
+                    "type": "number"
+                },
+                "nic": {
+                    "type": "number"
+                },
+                "rc": {
+                    "type": "number"
+                },
+                "seen_pos": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "lat",
+                "lon",
+                "nic",
+                "rc",
+                "seen_pos"
+            ]
+        },
+        "version": {
+            "type": "number"
+        },
+        "nic_baro": {
+            "type": "number"
+        },
+        "nac_p": {
+            "type": "number"
+        },
+        "nac_v": {
+            "type": "number"
+        },
+        "sil": {
+            "type": "number"
+        },
+        "sil_type": {
+            "type": "string"
+        },
+        "gva": {
+            "type": "number"
+        },
+        "sda": {
+            "type": "number"
+        },
+        "alert": {
+            "type": "number"
+        },
+        "spi": {
+            "type": "number"
+        },
+        "mlat": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "tisb": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "messages": {
+            "type": "number"
+        },
+        "seen": {
+            "type": "number"
+        },
+        "rssi": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "hex",
+        "type",
+        "flight",
+        "r",
+        "t",
+        "desc",
+        "alt_baro",
+        "gs",
+        "ias",
+        "tas",
+        "mach",
+        "oat",
+        "tat",
+        "track",
+        "track_rate",
+        "roll",
+        "mag_heading",
+        "true_heading",
+        "baro_rate",
+        "geom_rate",
+        "squawk",
+        "emergency",
+        "category",
+        "nav_qnh",
+        "nav_altitude_mcp",
+        "rr_lat",
+        "rr_lon",
+        "lastPosition",
+        "version",
+        "nic_baro",
+        "nac_p",
+        "nac_v",
+        "sil",
+        "sil_type",
+        "gva",
+        "sda",
+        "alert",
+        "spi",
+        "mlat",
+        "tisb",
+        "messages",
+        "seen",
+        "rssi"
+    ]
+}
