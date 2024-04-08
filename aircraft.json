@@ -108,27 +108,34 @@
             "type": "number"
         },
         "rr_lat": {
+            "description": "If no ADS-B or MLAT position available, a rough estimated position for the aircraft based on the receiver’s estimated coordinates.",
             "type": "number"
         },
         "rr_lon": {
+            "description": "If no ADS-B or MLAT position available, a rough estimated position for the aircraft based on the receiver’s estimated coordinates.",
             "type": "number"
         },
         "lastPosition": {
             "type": "object",
             "properties": {
                 "lat": {
+                    "description": "The latitude of the Aircraft",
                     "type": "number"
                 },
                 "lon": {
+                    "description": "The logitude of the Aircraft",
                     "type": "number"
                 },
                 "nic": {
+                    "description": "Navigation Integrity Category",
                     "type": "number"
                 },
                 "rc": {
+                    "description": "Radius of Containment, meters; a measure of position integrity derived from NIC & supplementary bits",
                     "type": "number"
                 },
                 "seen_pos": {
+                    "description": "How long ago (in seconds before “now”) the position was last updated",
                     "type": "number"
                 }
             },
@@ -141,54 +148,69 @@
             ]
         },
         "version": {
+            "description": "ADS-B Version Number 0, 1, 2 (3-7 are reserved)",
             "type": "number"
         },
         "nic_baro": {
+            "description": "Navigation Integrity Category for Barometric Altitude",
             "type": "number"
         },
         "nac_p": {
+            "description": "Navigation Accuracy for Position",
             "type": "number"
         },
         "nac_v": {
+            "description": "Navigation Accuracy for Velocity",
             "type": "number"
         },
         "sil": {
+            "description": "Source Integity Level",
             "type": "number"
         },
         "sil_type": {
+            "description": "Interpretation of SIL: unknown, perhour, persample",
             "type": "string"
         },
         "gva": {
+            "description": "Geometric Vertical Accuracy",
             "type": "number"
         },
         "sda": {
+            "description": "System Design Assurance",
             "type": "number"
         },
         "alert": {
+            "description": "Flight status alert bit ",
             "type": "number"
         },
         "spi": {
+            "description": "Flight status special position identification bit",
             "type": "number"
         },
         "mlat": {
+            "description": "List of fields derived from MLAT data",
             "type": "array",
             "items": {
                 "type": "string"
             }
         },
         "tisb": {
+            "description": "List of fields derived from TIS-B data",
             "type": "array",
             "items": {
                 "type": "string"
             }
         },
         "messages": {
+            "description": "Total number of Mode S messages received from this aircraft",
             "type": "number"
         },
         "seen": {
+            "description": "How long ago (in seconds before “now”) a message was last received from this aircraft",
             "type": "number"
         },
         "rssi": {
+            "description": "Recent average RSSI (signal power), in dbFS; this will always be negative.",
             "type": "number"
         }
     },
