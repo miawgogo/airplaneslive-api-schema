@@ -4,78 +4,107 @@
     "type": "object",
     "properties": {
         "hex": {
+            "description": "a Hex representation of the ICAO 24-bit address of the aircraft",
             "type": "string"
         },
         "type": {
+            "description": "The source protocol/message type that was used to get the aircraft infomation",
             "type": "string"
         },
         "flight": {
+            "description": "The callsign of the aircraft",
             "type": "string"
         },
         "r": {
+            "title": "registration",
+            "description": "The aircraft registration from the database of the providing service",
             "type": "string"
         },
         "t": {
+            "description": "Aircraft Type from the database, typically the model minus the manufacturer name e.g. A320",
             "type": "string"
         },
         "desc": {
+            "description": "The longer name of the aircraft including manu. e.g. Airbus A320",
             "type": "string"
         },
         "alt_baro": {
-            "type": "number"
+            "description": "the barometric altitude, will be a number or Ground",
+            "type": [
+                "number",
+                "string"
+            ]
         },
         "gs": {
+            "description": "Ground Speed",
             "type": "number"
         },
         "ias": {
+            "description": "Airspeed in Knots",
             "type": "number"
         },
         "tas": {
+            "description": "True Airspeed in Knots",
             "type": "number"
         },
         "mach": {
+            "description": "Mach Number",
             "type": "number"
         },
         "oat": {
+            "description": "Outer/static air temperature (C)",
             "type": "number"
         },
         "tat": {
+            "description": "Total air temperature (C)",
             "type": "number"
         },
         "track": {
+            "description": "true track over ground in degrees (0-359)",
             "type": "number"
         },
         "track_rate": {
+            "description": "the change of rate °/s",
             "type": "number"
         },
         "roll": {
+            "description": "The roll of the aircraft in °, can be positive and negitive",
             "type": "number"
         },
         "mag_heading": {
+            "description": "Heading, degrees clockwise from magnetic north",
             "type": "number"
         },
         "true_heading": {
+            "description": "Heading, degrees clockwise from true north (usually only transmitted on ground, in the air usually derived from the magnetic heading using magnetic model WMM2020)",
             "type": "number"
         },
         "baro_rate": {
+            "description": "Rate of change of barometric altitude, feet/minute",
             "type": "number"
         },
         "geom_rate": {
+            "description": "Rate of change of geometric (GNSS / INS) altitude, feet/minute",
             "type": "number"
         },
         "squawk": {
+            "description": "Mode A code (Squawk), encoded as 4 octal digits",
             "type": "string"
         },
         "emergency": {
+            "description": "ADS-B emergency/priority status, a superset of the 7×00 squawks (2.2.3.2.7.8.1.1) (none, general, lifeguard, minfuel, nordo, unlawful, downed, reserved)",
             "type": "string"
         },
         "category": {
+            "description": "emitter category to identify particular aircraft or vehicle classes (values A0 – D7)",
             "type": "string"
         },
         "nav_qnh": {
+            "description": "altimeter setting (QFE or QNH/QNE), hPa",
             "type": "number"
         },
         "nav_altitude_mcp": {
+            "description": "selected altitude from the Mode Control Panel / Flight Control Unit (MCP/FCU) or equivalent equipment",
             "type": "number"
         },
         "rr_lat": {
