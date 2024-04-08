@@ -116,6 +116,7 @@
             "type": "number"
         },
         "lastPosition": {
+            "description": "A object representation of the last position report of the aircraft",
             "type": "object",
             "properties": {
                 "lat": {
