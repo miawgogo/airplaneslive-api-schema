@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "The object containing status infomation and a array of aircraft that match the request",
+    "type": "object",
+    "properties": {
+        "ac": {
+            "description": "The Array of aircraft objects that match the parameters of the query",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/miawgogo/airplaneslive-api-schema/main/aircraft.json"
+            }
+        },
+        "msg": {
+            "description": "The error message from the endpoint, default is \"No error\"",
+            "type": "string"
+        },
+        "now": {
+            "description": "The time the response was generated, in seconds since the unix epoch",
+            "type": "number"
+        },
+        "total": {
+            "description": "The number of aircraft received",
+            "type": "number"
+        },
+        "ctime": {
+            "description": "The time this response was cached, in seconds since the unix epoch",
+            "type": "number"
+        },
+        "ptime": {
+            "description": "The server processing time this request required in milliseconds.",
+            "type": "number"
+        }
+    },
+    "required": [
+        "ac",
+        "msg",
+        "now",
+        "total",
+        "ctime",
+        "ptime"
+    ]
+}
